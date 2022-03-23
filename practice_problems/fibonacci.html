@@ -1,0 +1,18 @@
+/* write a program to fibonacci series upto n terms */
+
+<html>
+<head>
+    <title>Fibonacci Series</title>
+</head>
+<script>
+    var n1 = 0,  n2 = 1, next, i;
+    var num = 5;
+    document.write( "Fibonacci Series: ");  
+    for ( i = 1; i <= num; i++){  
+        document.write (" <br> " +  n1); 
+        next = n1 + n2; 
+        n1 = n2; 
+        n2 = next; 
+}  
+</script>
+</html>
