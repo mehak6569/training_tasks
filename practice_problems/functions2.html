@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		
+		function a()
+		{
+			document.write("hello");
+		}
+		function p()
+			{
+				var f=prompt("Enter the name")
+				if (f!=null)
+				{
+					alert("welcome"+f)
+				}
+				
+			}
+		function d()
+		{
+			var g=confirm("confirm to delete");
+			if (g==1)
+			{
+				alert("file deleted successfully")
+			}
+			if(g==0)
+			{
+				alert("file not deleted")
+			}
+		}
+		function b()
+		{
+			var x=3;
+			var y=6;
+			var z=x+y;
+			var s;
+			s=8;
+			document.write(z,s);
+		}
+		function c()
+		{
+			var f=document.fn.nm.value
+			if (f=="")
+			{
+				alert("username require")
+			}
+			var g=document.fn.nm.value
+			if(g=="")
+			{
+				alert("password is required")
+			}
+		}                                                                            
+	</script>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("bye")
+	</script>
+	<input type="button" name="b" onClick="a()" value="hello">
+<form method="post" name="fn">
+		<div>name:<input type="text" name="nm"></div>
+		<div>password:<input type="password" name="ps"></div>
+		<input type="submit" onClick="c()">
+	</form>
+	<input type="submit" name="dl" value="delete file" onClick="d()">
+	<input type="submit" name="pr" value="prompt" onClick="p()">
+</body>
+</html>

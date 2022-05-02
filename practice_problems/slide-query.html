@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$("#flip").click(function()
+			{
+				$("#panel").slideDown("slow");
+			});
+		});
+	</script>
+	<style type="text/css">
+		#flip,#panel{
+			padding: 5px;
+			text-align: center;
+			background-color: cyan;
+			border: 2px solid blue;
+		}
+		#panel{
+			padding: 50px;
+			display: none;
+		}
+	</style>
+	<div id="flip"> click to slide down</div>
+	<div id="panel">hello Jquery!!!!!!!!!!!!</div>
+</body>
+</html>

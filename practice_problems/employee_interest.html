@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <script>
+            function si(){
+                var e = Date();
+                var p=document.frm.sal.value;
+                var rate = document.frm.rate.value;
+                var time = document.frm.time.value;
+                var interest = (p*rate*time)/100;
+                alert("Interest is "+interest);
+            }
+        </script>
+        
+        <form name="frm">
+            <div>Enter the employee name<input type="text" name="nm" placeholder="Enter the employee name"></div>
+            <div>Enter the employee ID<input type="number" name="empId" placeholder="Enter the employee ID"></div>
+            <div>Enter the employee salary<input type="number" name="sal" placeholder="Enter the employee salary"></div>
+            <div>Enter the rate of interest<input type="number" name="rate" placeholder="Enter the rate of interest"></div>
+            <div>Enter the time(in number of years)<input type="number" name="time" placeholder="Enter the time(in number of years"></div>
+            <div><input type="submit" name="submit" value="Calculate interest" onClick="si()"></div>
+        </form>
+    </body>
+</html>

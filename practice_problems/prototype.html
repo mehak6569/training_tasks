@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <script>
+            function Emp(fname, lname){
+                this.fname = fname;
+                this.lname = lname;
+
+            }
+
+            Emp.prototype.fullName = function(){
+                return this.fname + " " + this.lname;
+            }
+
+            var emp1 = new Emp("Mehakdeep", "kaur");
+            var emp2 = new Emp("Abhishek", "Sharma");
+
+            document.writeln(emp1.fullName() + "<br>");
+            document.writeln(emp2.fullName());
+
+
+        </script>
+    </body>
+</html>

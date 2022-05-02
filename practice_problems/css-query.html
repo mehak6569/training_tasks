@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		p{
+			color: red;
+			margin: 4pxc;
+		}
+		b{
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	
+	<p></p>
+	<select id="single">
+		<option>Single</option>
+		<option>Double</option>
+		<option>triple</option>
+	</select>
+	<script type="text/javascript">
+		function displayVals() {    
+		  var singleValues = $( "#single" ).val();    
+ 		 $( "p" ).html( "<b>Value:</b> " + singleValues);    
+		}    
+		$( "select" ).change( displayVals );    
+		displayVals()
+	</script>
+</body>
+</html>

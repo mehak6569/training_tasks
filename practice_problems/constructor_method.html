@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <script>
+            class Employee{
+                constructor(){
+                    this.identity = "Mek";
+                    this.salary = 40000;
+                    
+                    
+                }
+                  
+            }
+            class Employee1 extends Employee{
+                constructor(id, name){
+                    super();
+                    this.id = id;
+                    this.name = name;
+                }
+            }
+            var emp1 = new Employee1(101, "Lara");
+
+            document.writeln(emp1.id + " " + emp1.name + " " + emp1.identity + " " + emp1.salary);
+            
+
+            
+        </script>
+    </body>
+</html>
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h3>This is a Heading 3 </h3>
+	<p> this is an example of Inner Html</p>
+	<p id="para"></p>
+	<button id="btn">Click me</button>
+	<script type="text/javascript">
+		document.getElementById("btn").onclick=function()
+		{
+			j()
+		};
+		function j()
+		{
+			document.getElementById("para").innerHTML = "welcome to the JS";
+			document.getElementById("para").style.color ="cyan";
+			document.getElementById("para").style.backgroundColor ="blue";
+			document.getElementById("para").style.border ="5px solid green";
+		}
+	</script>
+</body>
+</html>
