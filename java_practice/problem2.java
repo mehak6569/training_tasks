@@ -1,5 +1,4 @@
-import java.util.Scanner;
-import java.io.*;
+
 
 /*
 Alex, Nikil and Sam are three friends playing the ludo game. 
@@ -22,19 +21,22 @@ Sample Input/Output 2 Enter Alex points 10 Enter Nikil points -5 -5 is an invali
 Sample Input/Output 3 Enter Alex points 60 60 is an invalid number
 */
 
-
+import java.util.Scanner;
+import java.io.*;
 
 public class problem2 {
     public static void main(String[] args) {
         int alex, nikil, sam;
         Scanner sc = new Scanner(System.in);
-
+        int i=0;
+        
+        while(i != 9){
         System.out.print("Enter Alex points: ");
         alex = sc.nextInt();
 
         if(alex < 0 || alex > 50) {
             System.out.println(alex + " is an invalid number");
-            System.exit(0);
+            break;
         }
         
         System.out.print("Enter Nikil points: ");
@@ -65,7 +67,12 @@ public class problem2 {
             System.out.println("Sam scored " + sam + " points and wins the game.");
         }
 
+        sc.close();
     }
+
+    }
+
+    
 
 
     
