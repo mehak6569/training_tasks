@@ -12,5 +12,7 @@ public class array_intro {
         for (int i = 0; i < a.length; i++) {
             System.out.print(a[i] + ", ");
         }
+
+        sc.close();
     }
 }
